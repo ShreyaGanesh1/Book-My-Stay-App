@@ -43,12 +43,11 @@ public class BookMyStay {
         BookingHistory history = new BookingHistory();
 
         history.addReservation(new Reservation("Shreya", "Single"));
-        history.addReservation(new Reservation("Subala", "Double"));
-        history.addReservation(new Reservation("Vasu", "Suite"));
+        history.addReservation(new Reservation("Shlok", "Double"));
+        history.addReservation(new Reservation("Prathyush", "Suite"));
 
         // Generate report
         BookingReportService reportService = new BookingReportService();
         reportService.generateReport(history.getReservations());
     }
 }
-
