@@ -36,17 +36,16 @@ class BookingReportService {
     }
 }
 
-public class BookMyStay {
+public class BookMyStay{
 
     public static void main(String[] args) {
 
         BookingHistory history = new BookingHistory();
 
-        history.addReservation(new Reservation("Shreya", "Single"));
-        history.addReservation(new Reservation("Shlok", "Double"));
-        history.addReservation(new Reservation("Prathyush", "Suite"));
+        history.addReservation(new Reservation("Ashwin", "Single"));
+        history.addReservation(new Reservation("Shreya", "Double"));
+        history.addReservation(new Reservation("Vaanya", "Suite"));
 
-        // Generate report
         BookingReportService reportService = new BookingReportService();
         reportService.generateReport(history.getReservations());
     }
